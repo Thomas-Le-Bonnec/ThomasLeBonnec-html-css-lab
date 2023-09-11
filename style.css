@@ -1,0 +1,301 @@
+body {
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    background-color: #f2f5f7;
+    width: 80%;
+    min-width: 600px;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+header {
+    height: 250px;
+    border-radius: 12px;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+}
+
+section {
+    margin: 0;
+    justify-content: justify;
+}
+
+footer {
+    width: 80%;
+    height: 4.5rem;
+    position: fixed;
+    bottom: 0;
+    background: url('https://colorate.azurewebsites.net/SwatchColor/1C1C1E');
+    background-color: #1c1c1e;
+    display: flex;
+    align-items: center;
+    /*gap: 1rem;*/
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 3rem 0 2rem 0;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0 0.8rem 0;
+    color: #000000;
+    /*text-align: center;   I didn't want to center the text because it would make the website ugly*/
+}
+
+p {
+    margin: 1rem 0 1rem 0;
+}
+
+a {
+    display: block;
+    align-content: center;
+    color: rgb(48, 176, 199);
+    text-decoration: none;
+    margin: 0;
+    /*font-size: 18px;      Changing the font size would have looked weird, so I made it bold instead*/
+    font-weight: 500;
+}
+
+
+img {
+    display: block;
+}
+
+
+ul {
+    list-style-type: circle;
+    line-height: 200%;
+    padding-left: 2rem;
+}
+
+ol {
+    color: rgb(99,99,102)
+}
+
+
+
+
+
+/* Table style copied from https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l */
+
+table {
+    border-collapse: collapse;
+    border-radius: 12px;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+
+thead th {
+    background-color: #eef0f2;
+    color: #30b0c7;
+    font-weight: 600;
+    border-bottom: 1px solid #dddddd;
+}
+
+th:first-of-type {
+    border-radius: 12px 0 0 0;
+}
+
+th:last-of-type {
+    border-radius: 0 12px 0 0;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px 15px;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #eef0f2;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #30b0c7;
+}
+
+caption {
+    color: #8e8e93;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.c1 {
+    color: #ffffff;
+    background-color: #004852;
+}
+
+.c2 {
+    color: #ffffff;
+    background-color: #127c8d;
+}
+
+.c3 {
+    background-color: #30b0c7;
+}
+
+.c4 {
+    background-color: #5ecfe0;
+}
+
+.c5 {
+    background-color: #9adce7;
+}
+
+
+
+
+
+form {  /*I didn't apply the style of the form to the class "box", because my table already as the same style as the form*/
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.4rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    color: #8e8e93;
+}
+
+button, input[type=button], input[type=submit] {
+    font-family: 'Avenir Next';
+    font-size: 16px;
+    font-weight: 500;
+    border-style: none;
+    border-radius: 8px;
+    height: 2.5rem;
+    min-width: 10rem;
+}
+
+#form-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type=number], input[type=text], input[type=date], select {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #c7c7c7;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+}
+
+
+
+
+
+
+
+
+.page-picture {
+    width: 60px;
+    max-height: 60px;
+    object-fit: fill;
+    opacity: 1;
+    z-index: 0;
+    object-fit: contain;
+}
+
+.page-picture-link {
+    width: 60px;
+    max-height: 60px;
+    margin-left: auto;
+}
+
+#menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    /*gap: 1rem;*/
+    z-index: 1;
+    margin: 0;
+    border-radius: 8px;
+    backdrop-filter: none;
+    transition: backdrop-filter 1s;
+}
+
+#menu:hover {
+    backdrop-filter: url(filters.svg#filter) blur(4px) brightness(150%);
+}
+
+#menu a, footer a {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+}
+
+#menu a:hover, footer a:hover {
+    color: rgb(64, 200, 224);
+    background-color: rgba(64, 200, 224, 0.2);
+    transition: all 0.1s ease-out;
+}
+
+
+
+
+
+.action-button {
+    background-color: rgb(48, 176, 199);
+    color: #ffffff;
+}
+
+.action-button:hover {
+    background-color: rgba(48, 176, 199, 0.2);
+    color:rgb(48, 176, 199);
+    transition: all 0.05s;
+}
+
+.action-button:active {
+    background-color: rgba(48, 176, 199, 0.4);
+}
+
+.destructive-button {
+    background-color: rgb(250, 59, 48);
+    color: #ffffff;
+}
+
+.destructive-button:hover {
+    background-color: rgba(250, 59, 48, 0.2);
+    color:rgb(250, 59, 48);
+    transition: all 0.05s;
+}
+
+.destructive-button:active {
+    background-color: rgba(250, 59, 48, 0.4);
+}
