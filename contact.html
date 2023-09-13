@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Striped Umbrella</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="assets//images//su_banner.gif">
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="content">
+                <h2>Contact Us</h2>
+                
+                <form onsubmit="return false">
+                    <fieldset id="personnal-informations">
+                        <legend>Personnal Informations</legend>
+
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+    
+                        <p>Please select the music genres that you like</p>
+
+                        <div>
+                            <input type="checkbox" id="Classic" name="critere1">
+                            <label for="Classic">Classic</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" id="Jazz" name="critere2">
+                            <label for="Jazz">Jazz</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" id="Blues" name="critere3">
+                            <label for="Blues">Blues</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" id="Instrumental" name="critere4">
+                            <label for="Instrumental">Instrumental</label>
+                        </div>
+                    </fieldset>
+    
+                    <fieldset id="your-message">
+                        <legend>Your message</legend>
+
+                        <p>How did you hear about us ?</p>
+
+                        <select>
+                            <option>Our website</option>
+                            <option>Friends</option>
+                            <option>TV add</option>
+                            <option>Other</option>
+                        </select>
+
+                        <p>Would you recommend us to your friends ?</p>
+
+                        <div>
+                            <input type="radio" id="Yes" name="critere4">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="No" name="critere4">
+                            <label for="No">No</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Maybe" name="critere4">
+                            <label for="Maybe">Maybe</label>
+                        </div>
+                        
+                        <p>Your request</p>
+                        
+                        <textarea></textarea>
+
+                        <div>
+                            <input type="checkbox" id="email-updates" name="critere4">
+                            <label for="email-updates">Sign me up for email updates</label>
+                        </div>
+
+                        <input type="submit" id="submit" value="Submit">
+                    </fieldset>
+                </form>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.69174431341!2d-79.47765472339486!3d43.7792572710964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b71da32dd%3A0x2b0ff24b76395f19!2sFour%20Seasons%20Spa!5e0!3m2!1sfr!2sfr!4v1694614733785!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </main>
+
+            <footer>
+                <p>Copyright © 2023 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Thomas LE BONNEC - All rights reserved</p>
+            </footer>
+        </div>
+    </body>
+</html>
