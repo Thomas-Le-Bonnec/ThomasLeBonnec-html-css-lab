@@ -1,0 +1,206 @@
+/* Q# - All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+    margin: 0;
+}
+
+
+/* 1 - All the HTML5 new elements that you have used in your code should be displayed as block-level elements */
+address, article, aside, div, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+
+/* 2 - The <body> element has to be styled with : */
+body {
+    color: #000000;                                             /* a. Any colour you prefer for the text */
+    background-image: url('../assets/images/bora-bora.jpeg');     /* b. A background image */
+    font-family: 'Avenir Next', Helvetica, sans-serif;            /* c. The font family is at least 3 options of any sans-serif fonts */
+    font-size: 16px;
+    margin: 0;                                                    /* d. Margin 0 for all the four sides */
+}
+
+
+/* 3 - Style the <div> element with class “container” */
+.container {
+    width: 950px;                   /* a. The width value can be 950px */
+    margin-top: 5px;                /* b. 5px margin from top and bottom */
+    margin-bottom: 5px;             /* b. 5px margin from top and bottom */
+    margin-left: auto;              /* c. The div has to be aligned centered */
+    margin-right: auto;             /* c. The div has to be aligned centered */
+    background-color: #f2f5f7;    /* d. Apply any background colour that you prefer */
+}
+
+
+/* 4 - Style any element with class value of “content” */
+.content {
+    line-height: 1.4em;             /* a. The line height (of the text) should be 1.4em */
+    padding: 10px;                  /* b. 10px padding to all the sides */
+}
+
+
+/* 5 - Style the “header, nav, and footer” elements to share the following */
+header, nav, footer {
+    background-color: #1c1c1e;  /* Any Dark/Light background colour */
+    color: #ffffff;             /* Any Dark/Light foreground colour */ 
+}
+
+
+/* 6 - Style the unordered list element <ul> which is inside <nav> element */
+nav ul {
+    margin: 0;          /* a. 0 margin from all the sides */
+    padding: 5px;       /* b. 5px padding from all the sides */
+}
+
+
+/* 7 - Style the list items <li> of the main navigation (nav), or inside the nav element : */
+nav li {
+    display: inline-block;      /* a. To be displayed horizontally */
+    margin-right: 40px;         /* b. Adding margin of 40px to the right of each list item */
+    text-transform: uppercase;  /* c. All the navigation items should be displayed as Uppercase */
+}
+
+
+/* 8 - Add the 4 pseudo classes effect to the anchor tags/elements of the main navigation list items */
+nav li a:link {
+    color: rgb(48, 176, 199);
+}
+
+nav li a:visited {
+    color: rgb(48, 139, 199);
+}
+
+nav li a:hover {
+    color: #ffffff;
+}
+
+nav li a:active {
+    color: #ffffff;
+}
+
+
+/* 9 - Style any anchor <a> element */
+a {
+    color: rgb(48, 176, 199);       /* a. Any colour you like */
+    text-decoration: none;            /* b. No underline */
+}
+
+
+/* 10 - Style the three headings: h1, h2, and h3 */
+h1, h2, h3 {
+    margin: 10px;                   /* a. To have margin of 10px for all the sides */
+    text-transform: uppercase;      /* b. With Uppercase letters */
+    color: #000000;               /* c. Different dark/light colour */
+}
+
+
+/* 11 - Style the custom class named “img-centre” */
+.img-center {
+    display: block;             /* a. Centre the image horizontally */
+    margin-inline: auto;
+    margin-top: 5px;            /* b. Having margin of 5px from the top and bottom */
+    margin-bottom: 5px;
+    padding: 2px;               /* c. Having padding of 2px to all the sides */
+}
+
+
+/* 12 - Style the <audio> and <video> elements */
+audio, video {
+    display: block;             /* a. Centre any audio or video element */
+    margin-inline: auto;
+    margin-top: 10px;           /* b. With margin of 10px from the top and bottom */
+    margin-bottom: 10px;
+}
+
+
+/* 13 - Style any <table> element */
+table {
+    width: 800px;               /* a. The width is 800px */
+    margin-inline: auto;        /* b. Centre the table horizontally with 10px of margining from the top and bottom sides */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;  /* c. The table border has to be collapsed */
+}
+
+
+/* 14 -  Style both the <td> and <th> element of any table */
+table td, table th {
+    border: solid;                  /* a. Having a border with any settings you like */
+    border-color: #8e8e93;
+    border-width: 0.5px;
+    padding-top: 2px;               /* b. Padding of 2px from the top/bottom and 5px from the left/right */
+    padding-bottom: 2px;
+    padding-inline: 5px;        
+    background-color: #caf0f6;    /* c. Any background colour (light/dark) */
+}
+
+
+/* 15 - Style both the <th> inside any table and the <td> inside the <tfoot> */
+table th, table tfoot th {      /* I used a <th> in the <tfoot> so that the text would be bold */
+    text-transform: uppercase;      /* a. With Uppercase letters */
+    background-color: #5ecfe0;    /* b. Any background colour (dark/light) */
+    color: #000000;               /* c. Any colour (dark/light) */
+}
+
+
+/* 16 - Style any <dt> element */
+dt {
+    font-weight: 600;      /* a. Make it bold */
+}
+
+
+/* 17 - Style any <footer> element */
+footer {
+    font-size: 16px;        /* a. Change the font size to be 80% of the default font size or of the font size of the body */
+    text-align: center;     /* b. Align your text to the centre of the table */
+    padding-top: 1px;       /* c. Add 1px of padding from the top/bottom and 0 from the right/left */
+    padding-bottom: 1px;
+    padding-inline: 0px;
+}
+
+
+/* 18 - Style any <iframe> element */
+iframe {
+    margin-top: 10px;           /* a. Add margin of 10px for top/bottom */
+    margin-bottom: 10px;
+    display: block;
+    margin-inline: auto;        /* b. Centre the iframe horizontally */
+}
+
+
+/* 19 - Style any <fieldset> element */
+fieldset {
+    width: 500px;                   /* a. Add width of 500px */
+    margin: 20px auto 20px auto;    /* b. Add margin of 20px for top/bottom and centre the fieldset horizontally */
+    border: none;                   /* c. Add border with any style you prefer */
+    background-color: #ffffff;    /* d. Add background colour */
+}
+
+
+/* 20 - Style any <legend> element */
+legend {
+    font-style: italic;             /* a. Italic font style */
+    background-color: #ffffff;    /* b. Different front and background colour */
+    color: #000000;
+    margin: 0 10px 0 10px;          /* c. Margin of 0 from the top/bottom and 10px from the left/right */
+    padding: 0 5px 0 5px;           /* d. Padding of 0 from top/bottom and 5px from the left/right */
+    border: none;                   /* e. Give it a rounded border with any size or setting you prefer */
+    border-radius: 4px;
+}
+
+
+/* 21 - Style the <input> element that has an attribute named “type” with value of “submit” */
+input[type="submit"] {
+    border: 0.5px solid #d3d3d3;        /* a. Border with any style you like */
+    padding: 5px;                         /* b. Padding of 5px for all the sides */
+    background-color: #f0f0f0;          /* c. Any background colour you prefer */
+    color: #000000;                     /* d. Any colour you prefer */
+}
+
+
+/* 22 - Style the same <input> element that has an attribute named “type” with value of “submit” but with
+the pseudo class for the hover state */
+input[type="submit"]:hover {
+    color: #ffffff;                 /* a. Change its text colour and its background colour */
+    background-color: #127c8d;
+    cursor: pointer;                  /* b. Change the mouse pointer to look like a hand (the normal mouse icon for a link) */
+}
